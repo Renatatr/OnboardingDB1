@@ -1,0 +1,15 @@
+
+
+1 - repository.ConsultaUnica -> null
+    assert throw (pra saber se a excecao foi lançada)
+
+2 - repository.ConsultaUnica != null
+    [theory] com objetos invalidos
+    
+
+3 - result == 'atualizada!'
+
+-------------------------------------
+
+1 - médico já cadastrado
+2, 3 e 4 -> igual consulta?

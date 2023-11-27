@@ -29,6 +29,7 @@ builder.Services.AddScoped<IArmazenadorPaciente, ArmazenadorDePaciente>();
 builder.Services.AddScoped<IArmazenadorConsulta, ArmazenadorDeConsulta>();
 builder.Services.AddScoped<IArmazenadorPrescricao, ArmazenadorDePrescricao>();
 builder.Services.AddScoped<IArmazenadorTratamento, ArmazenadorDeTratamento>();
+builder.Services.AddScoped<IConsultarConsultaMedica, ConsultarConsultaMedica>();
 
 var app = builder.Build();
 

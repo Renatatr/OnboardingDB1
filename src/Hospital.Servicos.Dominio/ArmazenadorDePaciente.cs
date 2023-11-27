@@ -51,6 +51,7 @@ public class ArmazenadorDePaciente : IArmazenadorPaciente
         paciente.AlterarNome(dto.Nome);
         paciente.AlterarDataNascimento(dto.Nascimento);
         paciente.AlterarCPF(dto.CPF);
+        paciente.AlterarAcompanhante(dto.Acompanhante);
         paciente.Validar();
         _pacienteRepository.Alterar(paciente);
     }

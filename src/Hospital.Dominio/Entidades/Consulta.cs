@@ -39,6 +39,11 @@ public class Consulta : IId
         Data = data;
     }
 
+    public void AlterarDuracao(int duracaoMin)
+    {
+        DuracaoMin = duracaoMin;
+    }
+    
     public void Validar()
     {
         ValidadorDeRegra.Novo()

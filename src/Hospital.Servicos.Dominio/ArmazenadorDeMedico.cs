@@ -1,7 +1,6 @@
 ﻿using Hospital.Dominio.Dto;
 using Hospital.Dominio.Entidades;
 using Hospital.Dominio.Interfaces;
-using Microsoft.Extensions.FileSystemGlobbing.Internal;
 using System.Text.RegularExpressions;
 
 namespace Hospital.Dominio.Servicos;

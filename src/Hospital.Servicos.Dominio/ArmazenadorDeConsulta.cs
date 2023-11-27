@@ -70,6 +70,7 @@ public class ArmazenadorDeConsulta : IArmazenadorConsulta
         consulta.AlterarMedico(dto.MedicoId);
         consulta.AlterarPaciente(dto.PacienteId);
         consulta.AlterarData(dto.Data);
+        consulta.AlterarDuracao(dto.DuracaoMin);
         consulta.Validar();
         _consultaRepository.Alterar(consulta);
     }

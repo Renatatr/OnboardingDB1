@@ -52,4 +52,11 @@ public class ConsultaController : ControllerBase
         _consultaRepository.Excluir(id);
         return Ok("Médico Excluído!");
     }
+
+    [HttpGet("mostrarConsultaCalendario/{id}")]
+    public async Task<List<ConsultaCalendarioDto>> MostrarConsultaCalendario(int id, [FromServices] IConsultarConsultaMedica consultarConsultaMedica)
+    {
+        var dadosConsultaCalendario = await consultarConsultaMedica.Consultar(id);
+        return dadosConsultaCalendario;
+    }
 }

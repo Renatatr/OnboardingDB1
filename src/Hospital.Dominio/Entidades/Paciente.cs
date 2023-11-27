@@ -41,6 +41,11 @@ public class Paciente : IId
         CPF = Regex.Replace(cpf, @"[^a-zA-Z0-9\s]", "");
     }
 
+    public void AlterarAcompanhante(string acompanhante)
+    {
+        Acompanhante = acompanhante;
+    }
+
     public void Validar()
     {
         ValidadorDeRegra.Novo()
